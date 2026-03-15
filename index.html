@@ -1,0 +1,65 @@
+<!DOCTYPE html><html><head><title>White Tiger Games</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><style>
+
+body{
+background:#111;
+color:white;
+font-family:Arial;
+text-align:center;
+padding:20px;
+}
+
+button{
+padding:15px;
+margin:10px;
+font-size:18px;
+border-radius:8px;
+border:none;
+cursor:pointer;
+}
+
+.game{
+display:none;
+}
+
+.big{
+font-size:80px;
+margin:20px;
+}
+
+</style></head><body><h1>🐅 White Tiger Games</h1><div id="menu"><button onclick="startQuiz()">Animal Quiz</button>
+
+</div><div id="quiz" class="game"><h2>Animal Quiz</h2><div class="big">🐶</div><p>What animal is this?</p><button onclick="answer('dog')">Dog</button>
+<button onclick="answer('cat')">Cat</button>
+<button onclick="answer('fox')">Fox</button>
+
+<br><br>
+
+<button onclick="menu()">Back</button>
+
+</div><script>
+
+function startQuiz(){
+
+document.getElementById("menu").style.display="none"
+document.getElementById("quiz").style.display="block"
+
+}
+
+function menu(){
+
+document.getElementById("quiz").style.display="none"
+document.getElementById("menu").style.display="block"
+
+}
+
+function answer(a){
+
+if(a==="dog"){
+alert("Correct!")
+}else{
+alert("Wrong!")
+}
+
+}
+
+</script></body></html>
